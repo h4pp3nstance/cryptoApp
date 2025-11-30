@@ -34,8 +34,12 @@ import '@ionic/vue/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
 const app = createApp(App)
   .use(IonicVue)
+  .use(VueAxios, axios)
   .use(router);
 
 router.isReady().then(() => {

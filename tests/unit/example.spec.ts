@@ -1,10 +1,10 @@
 import { mount } from '@vue/test-utils'
-import HomePage from '@/views/HomePage.vue'
+import Home from '@/views/Home.vue'
 import { describe, expect, test } from 'vitest'
 
-describe('HomePage.vue', () => {
+describe('Home.vue', () => {
   test('renders home view', () => {
-    const wrapper = mount(HomePage)
-    expect(wrapper.text()).toMatch('Inbox')
+    const wrapper = mount(Home)
+    expect(wrapper.text()).toMatch('Crypto Prices')
   })
 })
